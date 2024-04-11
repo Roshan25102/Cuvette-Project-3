@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #404e74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#calculator{
+    overflow: hidden;
+}
+
+#display{
+    padding: 1rem;
+    width: 536px;
+    height: 142.73px;
+    top: 194px;
+    left: 466px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #181F32;
+    margin-bottom: 1.2rem;
+    font-family: Segoe UI;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 73.15px;
+    text-align: right;
+    color:#FFFFFF;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 22px;
+    padding: 25px;
+    background-color: #252D44;
+    width: 536px;
+    height: 487px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+#btn-17{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    width: 222.44px;
+}
+#btn-18{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 222.44px;
+}
+
+button{
+    width: 100px;
+    height: 60px;
+    left: 122px;
+    border-radius: 12px;
+    border: none;
+    background-color: #EAE3DB;
+    font-family: "Inter", "sans-serif";
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 36.31px;
+    text-align: center;
+    color: #3B4664;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d2cbc3;
+}
+
+/* active is the psuedo class which be ivoke when the button is clicked */
+button:active{
+    background-color: #a2a1a0;
+}
+
+.func-btn{
+    background-color:#647299;
+    color: white;
+}
+.func-btn:hover{
+    background-color:#5b6786;
+}
+.func-btn:active{
+    background-color: #49526b;
+}
+.calculate-btn{
+    background-color: #D13F30;
+    color: white;
+}
+.calculate-btn:hover{
+    background-color:  #d55143;
+}
+.calculate-btn:active{
+    background-color:  #a33226;
+}
